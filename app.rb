@@ -34,5 +34,6 @@ class App < Sinatra::Base
     when "multiply"
       result = (params[:number1].to_i * params[:number2].to_i)
       result      
+    when "divide"
   end
 end
