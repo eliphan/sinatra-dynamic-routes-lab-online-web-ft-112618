@@ -31,5 +31,7 @@ class App < Sinatra::Base
     when "subtract"
       result = (params[:number1].to_i - params[:number2].to_i)
       result
+    when "multiply"
+      
   end
 end
