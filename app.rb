@@ -27,16 +27,16 @@ class App < Sinatra::Base
     case params[:operation]
     when "add"
       result = (params[:number1].to_i + params[:number2].to_i)
-      result
+      result.to_s
     when "subtract"
       result = (params[:number1].to_i - params[:number2].to_i)
-      result
+      result.to_s
     when "multiply"
       result = (params[:number1].to_i * params[:number2].to_i)
-      result      
+      result.to_s      
     when "divide"
       result = (params[:number1].to_i / params[:number2].to_i)
-      result      
+      result.to_s      
     end
   end
 end
